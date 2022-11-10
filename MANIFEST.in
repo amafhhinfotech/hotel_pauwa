@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include hotel_pauwa *.css
+recursive-include hotel_pauwa *.csv
+recursive-include hotel_pauwa *.html
+recursive-include hotel_pauwa *.ico
+recursive-include hotel_pauwa *.js
+recursive-include hotel_pauwa *.json
+recursive-include hotel_pauwa *.md
+recursive-include hotel_pauwa *.png
+recursive-include hotel_pauwa *.py
+recursive-include hotel_pauwa *.svg
+recursive-include hotel_pauwa *.txt
+recursive-exclude hotel_pauwa *.pyc

@@ -1,0 +1,239 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-27 23:36:44.213919",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer_details_section",
+  "booking_order",
+  "customer",
+  "no_of_guest",
+  "column_break_5",
+  "customer_mobile_no",
+  "customer_email",
+  "booking_room_details_section",
+  "room_type",
+  "room_package",
+  "check_in",
+  "column_break_12",
+  "room_no",
+  "room_rate",
+  "check_out",
+  "no_of_nights",
+  "section_break_18",
+  "current_status",
+  "column_break_20",
+  "sign_in_sheet_and_attachment",
+  "guest_information_section",
+  "booked_sales_order_section",
+  "add_on_services_section",
+  "payment_info_section",
+  "accounting_synopsis_section",
+  "total_charges",
+  "outstanding_charges",
+  "column_break_33",
+  "advance_against_booking_order",
+  "customer_desk_balance",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "RF-.YY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "RF-.YY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "booking_order",
+   "fieldtype": "Link",
+   "label": "Booking Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "no_of_guest",
+   "fieldtype": "Int",
+   "label": "No of guest"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_mobile_no",
+   "fieldtype": "Data",
+   "label": "Customer Mobile No"
+  },
+  {
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email"
+  },
+  {
+   "fieldname": "booking_room_details_section",
+   "fieldtype": "Section Break",
+   "label": "Booking Room Details"
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Link",
+   "label": "Room Type",
+   "options": "Room Type"
+  },
+  {
+   "fieldname": "room_package",
+   "fieldtype": "Link",
+   "label": "Room Package",
+   "options": "Item"
+  },
+  {
+   "fieldname": "check_in",
+   "fieldtype": "Datetime",
+   "label": "Check In"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "room_no",
+   "fieldtype": "Link",
+   "label": "Room No",
+   "options": "Room List"
+  },
+  {
+   "fieldname": "room_rate",
+   "fieldtype": "Float",
+   "label": "Room Rate"
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Datetime",
+   "label": "Check Out"
+  },
+  {
+   "fieldname": "no_of_nights",
+   "fieldtype": "Int",
+   "label": "No of nights"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "current_status",
+   "fieldtype": "Data",
+   "label": "Current status"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "guest_information_section",
+   "fieldtype": "Section Break",
+   "label": "Guest Information"
+  },
+  {
+   "fieldname": "booked_sales_order_section",
+   "fieldtype": "Section Break",
+   "label": "Booked Sales Order"
+  },
+  {
+   "fieldname": "add_on_services_section",
+   "fieldtype": "Section Break",
+   "label": "Add On Services"
+  },
+  {
+   "fieldname": "payment_info_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Info"
+  },
+  {
+   "fieldname": "accounting_synopsis_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Synopsis"
+  },
+  {
+   "fieldname": "total_charges",
+   "fieldtype": "Currency",
+   "label": "Total Charges"
+  },
+  {
+   "fieldname": "outstanding_charges",
+   "fieldtype": "Currency",
+   "label": "Outstanding Charges"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "advance_against_booking_order",
+   "fieldtype": "Currency",
+   "label": "Advance against Booking Order"
+  },
+  {
+   "fieldname": "customer_desk_balance",
+   "fieldtype": "Currency",
+   "label": "Customer Desk Balance"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Room Folio",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "sign_in_sheet_and_attachment",
+   "fieldtype": "Link",
+   "label": "Sign In Sheet and Attachment",
+   "options": "Sign In Sheet and Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-27 23:38:40.163290",
+ "modified_by": "Administrator",
+ "module": "Hotel Pauwa",
+ "name": "Room Folio",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

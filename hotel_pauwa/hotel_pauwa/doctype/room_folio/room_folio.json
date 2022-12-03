@@ -15,6 +15,7 @@
   "column_break_5",
   "customer_mobile_no",
   "customer_email",
+  "remember_notes",
   "booking_room_details_section",
   "room_type",
   "room_package",
@@ -209,12 +210,17 @@
    "fieldtype": "Link",
    "label": "Sign In Sheet and Attachment",
    "options": "Sign In Sheet and Attachment"
+  },
+  {
+   "fieldname": "remember_notes",
+   "fieldtype": "Small Text",
+   "label": "Remember Notes "
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-11-27 23:38:40.163290",
+ "modified": "2022-12-04 03:39:19.743337",
  "modified_by": "Administrator",
  "module": "Hotel Pauwa",
  "name": "Room Folio",

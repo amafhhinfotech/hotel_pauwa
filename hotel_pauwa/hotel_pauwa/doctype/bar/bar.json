@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "autoname": "BAR-.YY.-.###",
+ "creation": "2022-11-27 23:58:19.500807",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "room_folio",
+  "booking_no",
+  "room_no",
+  "customer",
+  "guest",
+  "column_break_6",
+  "company",
+  "date",
+  "invoiced",
+  "bar_items_section",
+  "items",
+  "column_break_14",
+  "total_qty",
+  "total_amount",
+  "section_break_15",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "room_folio",
+   "fieldtype": "Link",
+   "label": "Room Folio",
+   "options": "Room Folio"
+  },
+  {
+   "fetch_from": "room_folio.room_no",
+   "fieldname": "room_no",
+   "fieldtype": "Data",
+   "label": "Room No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "foom_folio.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "guest",
+   "fieldtype": "Link",
+   "label": "Guest",
+   "options": "Contact",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Data",
+   "label": "Total Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "invoiced",
+   "fieldtype": "Check",
+   "label": "Invoiced"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Bar Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "booking_no",
+   "fieldtype": "Link",
+   "label": "Booking No",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "bar_items_section",
+   "fieldtype": "Section Break",
+   "label": "Bar Items"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-12-01 01:06:47.519217",
+ "modified_by": "Administrator",
+ "module": "Hotel Pauwa",
+ "name": "Bar",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
